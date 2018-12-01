@@ -9,4 +9,4 @@
 
 - ### [NOI，AIO](https://github.com/taoyongming/StudyNotes/blob/master/NIO/NIO.md)
 
-- ### [GIT](https://github.com/taoyongming/StudyNotes/blob/master/GIT/GIT.md)
+- ### [GIT](https://github.com/taoyongming/StudyNotes/blob/master/GIT/git.md)
