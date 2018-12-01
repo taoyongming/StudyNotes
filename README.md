@@ -7,4 +7,4 @@
 
 - ### [PYTHON](https://github.com/taoyongming/StudyNotes/blob/master/python/python.md)
 
- ### [NOI，AIO](https://github.com/taoyongming/StudyNotes/blob/master/NIO.md)
+- ### [NOI，AIO](https://github.com/taoyongming/StudyNotes/blob/master/NIO.md)
