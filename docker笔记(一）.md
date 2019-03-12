@@ -155,3 +155,8 @@ docker network connect app db2
 docker network disconnect app db2
 
 第六章 使用Docker构建服务
+docker run --volumes-from
+--volumes-from把指定容器里的所有卷都加入新创建的容器
+读取redis主日志
+docker run -ti --rm --volumes-from redis_primary \ubuntu cat /var/log/redis/redis-server.log
+
