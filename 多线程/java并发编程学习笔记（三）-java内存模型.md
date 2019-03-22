@@ -124,3 +124,123 @@ int i = a;　　 // 4
 
 
 ##### 锁的内存语义
+
+当线程释放锁时，JMM会把该线程对应的本地内存中的共享变量刷新到主内存中。以上
+面的MonitorExample程序为例，A线程释放锁后，共享数据的状态示意图
+
+![Snipaste_2019-03-22_10-48-30](images/Snipaste_2019-03-22_10-48-30.png)
+
+当线程获取锁时，JMM会把该线程对应的本地内存置为无效。从而使得被监视器保护的
+临界区代码必须从主内存中读取共享变量。
+
+下面对锁释放和锁获取的内存语义做个总结。
+
+- 线程A释放一个锁，实质上是线程A向接下来将要获取这个锁的某个线程发出了（线程A
+  对共享变量所做修改的）消息。
+- 线程B获取一个锁，实质上是线程B接收了之前某个线程发出的（在释放这个锁之前对共
+  享变量所做修改的）消息。
+- 线程A释放锁，随后线程B获取这个锁，这个过程实质上是线程A通过主内存向线程B发
+  送消息。
+
+##### 锁内存语义的实现
+
+我们借助ReentrantLock的源代码，来分析锁内存语义的具体实现机制。
+
+请看下面的示例代码。
+
+```java
+![Snipaste_2019-03-22_13-21-48](images/Snipaste_2019-03-22_13-21-48.png)class ReentrantLockExample {
+		int a = 0;
+		ReentrantLock lock = new ReentrantLock();
+		public void writer() {
+			lock.lock();　　　　 // 获取锁
+			try {
+				a++;
+			} f　　inally {
+				lock.unlock();　　// 释放锁
+			}
+		}
+		public void reader () {
+			lock.lock();　　　　 // 获取锁
+			try {
+				int i = a;
+……
+			} f　　inally {
+				lock.unlock();　 // 释放锁
+			}
+		}
+	}
+```
+
+在ReentrantLock中，调用lock()方法获取锁；调用unlock()方法释放锁。
+ReentrantLock的实现依赖于Java同步器框架AbstractQueuedSynchronizer（本文简称之为
+AQS）。AQS使用一个整型的volatile变量（命名为state）来维护同步状态，马上我们会看到，这
+个volatile变量是ReentrantLock内存语义实现的关键。
+
+ReentrantLock的类图
+
+![Snipaste_2019-03-22_13-21-48](images/Snipaste_2019-03-22_13-21-48.png)
+
+ReentrantLock分为公平锁和非公平锁，我们首先分析公平锁。
+
+使用公平锁时，加锁方法lock()时，加锁方法调用AQS的tryAcquire(int acquires)方法：
+
+```java
+protected final boolean tryAcquire(int acquires) {
+final Thread current = Thread.currentThread();
+int c = getState();　　　　// 获取锁的开始，首先读volatile变量state
+if (c == 0) {
+if (isFirst(current) &&
+compareAndSetState(0, acquires)) {
+setExclusiveOwnerThread(current);
+return true;
+}
+}
+else if (current == getExclusiveOwnerThread()) {
+int nextc = c + acquires;
+if (nextc < 0)　　
+throw new Error("Maximum lock count exceeded");
+setState(nextc);
+return true;
+}
+return false;
+}
+```
+
+**从上面源代码中我们可以看出，加锁方法首先读volatile变量state。**
+
+在使用公平锁时，解锁方法unlock()时，调用AQS的 tryRelease(int releases)方法
+
+```java
+protected final boolean tryRelease(int releases) {
+int c = getState() - releases;
+if (Thread.currentThread() != getExclusiveOwnerThread())
+throw new IllegalMonitorStateException();
+boolean free = false;
+if (c == 0) {
+free = true;
+setExclusiveOwnerThread(null);
+}
+setState(c);　　　　　// 释放锁的最后，写volatile变量state
+return free;
+}
+```
+
+**从上面的源代码可以看出，在释放锁的最后写volatile变量state。**
+
+非公平锁的释放和公平锁完全一样，所以这里仅仅分析非公平锁的获取。使用非公平锁时，加锁方法lock()调用AQS的compareAndSetState(int expect, int update)方法
+
+```java
+protected final boolean compareAndSetState(int expect, int update) {
+return unsafe.compareAndSwapInt(this, stateOffset, expect, update);
+}
+```
+
+该方法以原子操作的方式更新state变量，本文把Java的compareAndSet()方法调用简称为
+CAS。JDK文档对该方法的说明如下：如果当前状态值等于预期值，则以原子方式将同步状态
+设置为给定的更新值。此操作具有volatile读和写的内存语义。
+
+**从本文对ReentrantLock的分析可以看出，锁释放-获取的内存语义的实现至少有下面两种**
+**方式。**
+1）利用volatile变量的写-读所具有的内存语义。
+2）利用CAS所附带的volatile读和volatile写的内存语义。
