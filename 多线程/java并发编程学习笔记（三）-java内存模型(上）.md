@@ -244,3 +244,124 @@ CAS。JDK文档对该方法的说明如下：如果当前状态值等于预期�
 **方式。**
 1）利用volatile变量的写-读所具有的内存语义。
 2）利用CAS所附带的volatile读和volatile写的内存语义。
+
+##### concurrent包的实现
+
+concurrent包的实现示意图：
+
+![Snipaste_2019-03-25_14-48-43](../%E5%A4%9A%E7%BA%BF%E7%A8%8B/images/Snipaste_2019-03-25_14-48-43.png)
+
+##### final域的内存语义
+
+final引用不能从构造函数内“溢出”
+
+```java
+public class FinalReferenceEscapeExample {
+   final int i;
+   static FinalReferenceEscapeExample obj;
+   public FinalReferenceEscapeExample () {
+      i = 1; // 1写final域
+      obj = this; // 2 this引用在此"逸出"
+   }
+   public static void writer() {
+      new FinalReferenceEscapeExample ();
+   }
+   public static void reader() {
+      if (obj != null) { // 3
+         int temp = obj.i; // 4
+      }
+   }
+}
+```
+
+##### JSR-133为什么要增强final的语义
+
+在旧的Java内存模型中，一个最严重的缺陷就是线程可能看到final域的值会改变。比如，
+一个线程当前看到一个整型final域的值为0（还未初始化之前的默认值），过一段时间之后这个
+线程再去读这个final域的值时，却发现值变为1（被某个线程初始化之后的值）。最常见的例子
+就是在旧的Java内存模型中，String的值可能会改变。
+为了修补这个漏洞，JSR-133专家组增强了final的语义。通过为final域增加写和读重排序
+规则，可以为Java程序员提供初始化安全保证：只要对象是正确构造的（被构造对象的引用在
+构造函数中没有“逸出”），那么不需要使用同步（指lock和volatile的使用）就可以保证任意线程
+都能看到这个final域在构造函数中被初始化之后的值。
+
+
+
+##### happens-before
+
+《JSR-133:Java Memory Model and Thread Specification》定义了如下happens-before规则。
+1）程序顺序规则：一个线程中的每个操作，happens-before于该线程中的任意后续操作。
+2）监视器锁规则：对一个锁的解锁，happens-before于随后对这个锁的加锁。
+3）volatile变量规则：对一个volatile域的写，happens-before于任意后续对这个volatile域的
+读。
+4）传递性：如果A happens-before B，且B happens-before C，那么A happens-before C。
+5）start()规则：如果线程A执行操作ThreadB.start()（启动线程B），那么A线程的
+ThreadB.start()操作happens-before于线程B中的任意操作。
+6）join()规则：如果线程A执行操作ThreadB.join()并成功返回，那么线程B中的任意操作
+happens-before于线程A从ThreadB.join()操作成功返回。
+
+##### 双重检查锁定与延迟初始化
+
+在Java程序中，有时候可能需要推迟一些高开销的对象初始化操作，并且只有在使用这些
+对象时才进行初始化。此时，程序员可能会采用延迟初始化。但要正确实现线程安全的延迟初
+始化需要一些技巧，否则很容易出现问题。比如，下面是非线程安全的延迟初始化对象的示例
+代码。在UnsafeLazyInitialization类中，假设A线程执行代码1的同时，B线程执行代码2。此时，线
+程A可能会看到instance引用的对象还没有完成初始化
+
+```java
+public class UnsafeLazyInitialization {
+   private static Instance instance;
+   public static Instance getInstance() {
+      if (instance == null) // 1：A线程执行
+         instance = new Instance(); // 2：B线程执行
+      return instance;
+   }
+}
+```
+
+对于UnsafeLazyInitialization类，我们可以对getInstance()方法做同步处理来实现线程安全
+的延迟初始化。示例代码如下。
+
+```java
+public class SafeLazyInitialization {
+   private static Instance instance;
+   public synchronized static Instance getInstance() {
+      if (instance == null)
+         instance = new Instance();
+      return instance;
+   }
+}
+```
+
+双重检查锁定
+
+```java
+	public class SafeDoubleCheckedLocking {
+		private volatile static Instance instance;
+		public static Instance getInstance() {
+			if (instance == null) {
+				synchronized (SafeDoubleCheckedLocking.class) {
+					if (instance == null)
+						instance = new Instance(); // instance为volatile，现在没问题了
+				}
+			}
+			return instance;
+		}
+	}
+```
+
+这里instance变量一定要用volatile修饰符，不然代码读取到instance不为null时，instance引用的对象有可能还没有完成初始化。
+
+基于类初始化的解决方案
+
+```java
+public class InstanceFactory {
+   private static class InstanceHolder {
+      public static Instance instance = new Instance();
+   }
+   public static Instance getInstance() {
+      return InstanceHolder.instance ;　　// 这里将导致InstanceHolder类被初始化
+   }
+}
+```
+
