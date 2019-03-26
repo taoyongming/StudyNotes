@@ -149,7 +149,7 @@ int i = a;　　 // 4
 请看下面的示例代码。
 
 ```java
-![Snipaste_2019-03-22_13-21-48](images/Snipaste_2019-03-22_13-21-48.png)class ReentrantLockExample {
+class ReentrantLockExample {
 		int a = 0;
 		ReentrantLock lock = new ReentrantLock();
 		public void writer() {

@@ -254,7 +254,7 @@ alter table test_rpt_office_lvl drop PARTITION trol_201711,trol_201712,trol_2018
 
  以下是按月分区
 
-```sql
+```mysql
 SET FOREIGN_KEY_CHECKS=0;
 
 -- Procedure structure for SP_TABLE_PARTITION_AUTO
