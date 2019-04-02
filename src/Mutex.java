@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
 /**
- * ${DESCRIPTION}
+ * ${Mutex}
  *
  * @author tym
  * @ceeate 2019/4/1
