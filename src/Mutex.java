@@ -2,15 +2,15 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.LockSupport;
 
 /**
- * ${Mutex}
  *
  * @author tym
  * @ceeate 2019/4/1
  **/
 public class Mutex {
-        // 静态内部类，自定义同步器
+
         private static class Sync extends AbstractQueuedSynchronizer {
             // 是否处于占用状态
             @Override
