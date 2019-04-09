@@ -115,13 +115,13 @@ private transient volatile Node<E> tail = head;
 从队列里取元素的线程。阻塞队列就是生产者用来存放元素、消费者用来获取元素的容器。
 
 JDK 7提供了7个阻塞队列，如下。
-·ArrayBlockingQueue：一个由数组结构组成的有界阻塞队列。
-·LinkedBlockingQueue：一个由链表结构组成的有界阻塞队列。
-·PriorityBlockingQueue：一个支持优先级排序的无界阻塞队列。
-·DelayQueue：一个使用优先级队列实现的无界阻塞队列。
-·SynchronousQueue：一个不存储元素的阻塞队列。
-·LinkedTransferQueue：一个由链表结构组成的无界阻塞队列。
-·LinkedBlockingDeque：一个由链表结构组成的双向阻塞队列。
+**·ArrayBlockingQueue：一个由数组结构组成的有界阻塞队列。**
+**·LinkedBlockingQueue：一个由链表结构组成的有界阻塞队列。**
+**·PriorityBlockingQueue：一个支持优先级排序的无界阻塞队列。**
+**·DelayQueue：一个使用优先级队列实现的无界阻塞队列。**
+**·SynchronousQueue：一个不存储元素的阻塞队列。**
+**·LinkedTransferQueue：一个由链表结构组成的无界阻塞队列。**
+**·LinkedBlockingDeque：一个由链表结构组成的双向阻塞队列。**
 
 ##### 阻塞队列的实现原理
 
@@ -189,7 +189,7 @@ LockSupport.park（this）来实现。
 窃取任务线程之间的竞争，通常会使用双端队列，被窃取任务线程永远从双端队列的头部拿
 任务执行，而窃取任务的线程永远从双端队列的尾部拿任务执行。
 
-Fork/Join框架的设计
+**Fork/Join框架的设计**
 
 步骤1　分割任务。
 
@@ -199,6 +199,94 @@ Fork/Join使用两个类来完成以上两件事情。
 ①ForkJoinTask：我们要使用ForkJoin框架，必须首先创建一个ForkJoin任务。它提供在任务
 中执行fork()和join()操作的机制。通常情况下，我们不需要直接继承ForkJoinTask类，只需要继
 承它的子类，Fork/Join框架提供了以下两个子类。
-·RecursiveAction：用于没有返回结果的任务。
-·RecursiveTask：用于有返回结果的任务。
+**·RecursiveAction：用于没有返回结果的任务。**
+**·RecursiveTask：用于有返回结果的任务。**
 ②ForkJoinPool：ForkJoinTask需要通过ForkJoinPool来执行。
+
+**使用Fork/Join框架**
+
+让我们通过一个简单的需求来使用Fork/Join框架，需求是：计算1+2+3+4的结果。
+
+```java
+package fj;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.Future;
+import java.util.concurrent.RecursiveTask;
+    public class CountTask extends RecursiveTask<Integer> {
+        private static final int THRESHOLD = 2;　　// 阈值
+        private int start;
+        private int end;
+        public CountTask(int start, int end) {
+            this.start = start;
+            this.end = end;
+        }
+        @Override
+        protected Integer compute() {
+            int sum = 0;
+// 如果任务足够小就计算任务
+            boolean canCompute = (end - start) <= THRESHOLD;
+            if (canCompute) {
+                for (int i = start; i <= end; i++) {
+                    sum += i;
+                }
+            } else {
+// 如果任务大于阈值，就分裂成两个子任务计算
+                int middle = (start + end) / 2;
+                CountTask leftTask = new CountTask(start, middle);
+                CountTask rightTask = new CountTask(middle + 1, end);
+// 执行子任务
+                leftTask.fork();
+                rightTask.fork();
+// 等待子任务执行完，并得到其结果
+                int leftResult=leftTask.join();
+                int rightResult=rightTask.join();
+// 合并子任务
+                sum = leftResult + rightResult;
+            }
+            return sum;
+        }
+        public static void main(String[] args) {
+            ForkJoinPool forkJoinPool = new ForkJoinPool();
+// 生成一个计算任务，负责计算1+2+3+4
+            CountTask task = new CountTask(1, 4);
+// 执行一个任务
+            Future<Integer> result = forkJoinPool.submit(task);
+            try {
+                System.out.println(result.get());
+            } catch (InterruptedException e) {
+            } catch (ExecutionException e) {
+            }
+        }
+    }
+```
+
+​	通过这个例子，我们进一步了解ForkJoinTask，ForkJoinTask与一般任务的主要区别在于它
+需要实现compute方法，在这个方法里，首先需要判断任务是否足够小，如果足够小就直接执
+行任务。如果不足够小，就必须分割成两个子任务，每个子任务在调用fork方法时，又会进入
+compute方法，看看当前子任务是否需要继续分割成子任务，如果不需要继续分割，则执行当
+前子任务并返回结果。使用join方法会等待子任务执行完并得到其结果。
+
+**Fork/Join框架的异常处理**
+
+​	ForkJoinTask在执行的时候可能会抛出异常，但是我们没办法在主线程里直接捕获异常，
+所以ForkJoinTask提供了isCompletedAbnormally()方法来检查任务是否已经抛出异常或已经被
+取消了，并且可以通过ForkJoinTask的getException方法获取异常。使用如下代码。
+
+```java
+if(task.isCompletedAbnormally())
+{
+System.out.println(task.getException());
+}
+```
+
+​	getException方法返回Throwable对象，如果任务被取消了则返回CancellationException。如
+果任务没有完成或者没有抛出异常则返回null。
+
+**Fork/Join框架的实现原理**
+
+​	ForkJoinPool由ForkJoinTask数组和ForkJoinWorkerThread数组组成，ForkJoinTask数组负责
+将存放程序提交给ForkJoinPool的任务，而ForkJoinWorkerThread数组负责执行这些任务。
+
+​	getException方法返回Throwable对象，如果任务被取消了则返回CancellationException。如
+果任务没有完成或者没有抛出异常则返回null。
