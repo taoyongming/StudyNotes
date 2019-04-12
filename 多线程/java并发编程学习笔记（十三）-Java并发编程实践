@@ -1,0 +1,115 @@
+线上问题定位
+
+​	有时候，有很多问题只有在线上或者预发环境才能发现，而线上又不能调试代码，所以线
+上问题定位就只能看日志、系统状态和dump线程，本节只是简单地介绍一些常用的工具，以帮
+助大家定位线上问题。
+
+1) TOP命令
+
+2)使用top的交互命令数字1查看每个CPU的性能数据。
+
+3)使用top的交互命令H查看每个线程的性能信息。
+
+在这里可能会出现3种情况。
+
+1. 第一种情况，某个线程CPU利用率一直100%，则说明是这个线程有可能有死循环，那么
+   请记住这个PID。
+2. 第二种情况，某个线程一直在TOP 10的位置，这说明这个线程可能有性能问题。
+3. 第三种情况，CPU利用率高的几个线程在不停变化，说明并不是由某一个线程导致CPU
+   偏高。 
+
+​       如果是第一种情况，也有可能是GC造成，可以用jstat命令看一下GC情况，看看是不是因
+为持久代或年老代满了，产生Full GC，导致CPU利用率持续飙高，命令和回显如下。
+
+```cmd
+sudo /opt/java/bin/jstat -gcutil 31177 1000 5
+```
+
+还可以把线程dump下来，看看究竟是哪个线程、执行什么代码造成的CPU利用率高。执行
+以下命令，把线程dump到文件dump17里。执行如下命令。
+
+```cmd
+sudo -u admin /opt/taobao/java/bin/jstack 31177 > /home/tengfei.fangtf/dump17
+```
+
+dump出来内容的类似下面内容。
+
+```cmd
+"http-0.0.0.0-7001-97" daemon prio=10 tid=0x000000004f6a8000 nid=0x555e in Object.
+wait() [0x0000000052423000]
+java.lang.Thread.State: WAITING (on object monitor)
+at java.lang.Object.wait(Native Method)
+
+waiting on (a org.apache.tomcat.util.net.AprEndpoint$Worker)
+at java.lang.Object.wait(Object.java:485)
+at org.apache.tomcat.util.net.AprEndpoint$Worker.await(AprEndpoint.java:1464)
+
+locked (a org.apache.tomcat.util.net.AprEndpoint$Worker)
+at org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1489)
+at java.lang.Thread.run(Thread.java:662)
+```
+
+dump出来的线程ID（nid）是十六进制的，而我们用TOP命令看到的线程ID是十进制的，所
+以要用printf命令转换一下进制。然后用十六进制的ID去dump里找到对应的线程。
+
+```cmd
+printf "%x\n" 31558
+```
+
+输出：7b46。
+
+##### 性能测试
+
+测试开始后，首先登录到服务器里查看当前有多少台机器在压测服务器，因为程序的端
+口是12200，所以使用netstat命令查询有多少台机器连接到这个端口上。命令如下。
+
+```cmd
+$ netstat -nat | grep 12200 –c
+```
+
+10
+通过这个命令可以知道已经有10台机器在压测服务器。QPS达到了1400，程序开始报错获
+取不到数据库连接，因为我们的数据库端口是3306，用netstat命令查看已经使用了多少个数据
+库连接。命令如下。
+
+```cmd
+$ netstat -nat | grep 3306 –c
+```
+
+12
+
+增加应用服务器里线程池的核心线程数和最大线程数到1024，通过ps命令查看下线程数
+是否增长了，执行的命令如下。
+
+```cmd
+$ ps -eLf | grep java -c
+```
+
+1520
+
+##### 性能测试中使用的其他命令
+
+1）查看网络流量。
+
+```cmd
+$ cat /proc/net/dev
+```
+
+2）查看系统平均负载。
+
+```cmd
+$ cat /proc/loadavg
+```
+
+3）查看系统内存情况。
+
+```cmd
+$ cat /proc/meminfo
+```
+
+4）查看CPU的利用率。
+
+```cmd
+cat /proc/stat
+```
+
