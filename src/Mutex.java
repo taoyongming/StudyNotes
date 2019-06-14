@@ -54,5 +54,9 @@ public class Mutex {
         public boolean tryLock(long timeout, TimeUnit unit) throws InterruptedException {
             return sync.tryAcquireNanos(1, unit.toNanos(timeout));
         }
+
+        public static void main(String[] args) {
+            new Mutex().hasQueuedThreads();
+        }
     }
 
