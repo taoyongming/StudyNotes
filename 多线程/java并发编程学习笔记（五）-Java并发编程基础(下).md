@@ -445,7 +445,7 @@ public interface ThreadPool<Job extends Runnable> {
                         }
                         byte[] array = baos.toByteArray();
                         out.println("HTTP/1.1 200 OK");
-                        out.println("Server: Molly");
+                        out.println(javaperformance.Servere.Server: Molly");
                         out.println("Content-Type: image/jpeg");
                         out.println("Content-Length: " + array.length);
                         out.println("");
@@ -455,7 +455,7 @@ public interface ThreadPool<Job extends Runnable> {
                                 FileInputStream(filePath)));
                         out = new PrintWriter(socket.getOutputStream());
                         out.println("HTTP/1.1 200 OK");
-                        out.println("Server: Molly");
+                    javaperformance.Server("javaperformance.Server: Molly");
                         out.println("Content-Type: text/html; charset=UTF-8");
                         out.println("");
                         while ((line = br.readLine()) != null) {
