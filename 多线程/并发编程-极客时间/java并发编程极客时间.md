@@ -18,4 +18,4 @@ Thread Local 和 final 关键字，还有一种 Copy-on-write 的模式
 
 
 
-![](images/1.png)
+![](../images/1.png)
