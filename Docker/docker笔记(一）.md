@@ -8,7 +8,7 @@ Docker镜像
 Registry
 Docker容器
 
-##### ![docker架构](images/docker架构.png)
+##### ![docker架构](docker架构.png)
 
 
 
@@ -71,7 +71,7 @@ docker rm
 
 ##### 使用Docker 镜像和仓库
 
-![docker文件系统](images/docker文件系统.png)
+![docker文件系统](docker文件系统.png)
 
 列出镜像
 docker images
