@@ -43,3 +43,16 @@ Java 里所有非私有实例方法调用都会被编译成 invokevirtual 指令
 #### javap：查阅 Java 字节码
 
 方法内联指的是编译器在编译一个方法时，将某个方法调用的目标方法也纳入编译范围内，并用其返回值替代原方法调用这么个过程。
+
+
+
+```
+// 获取方法句柄的不同方式
+MethodHandles.Lookup l = Foo.lookup(); // 具备 Foo 类的访问权限
+Method m = Foo.class.getDeclaredMethod("bar", Object.class);
+MethodHandle mh0 = l.unreflect(m);
+ 
+MethodType t = MethodType.methodType(void.class, Object.class);
+MethodHandle mh1 = l.findStatic(Foo.class, "bar", t);
+```
+
