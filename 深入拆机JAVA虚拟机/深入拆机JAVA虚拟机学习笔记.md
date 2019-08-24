@@ -56,3 +56,16 @@ MethodType t = MethodType.methodType(void.class, Object.class);
 MethodHandle mh1 = l.findStatic(Foo.class, "bar", t);
 ```
 
+#### java对象的内存布局
+
+ 对象头
+
+每个对象都有一个对象头，对象头包括两部分，标记信息和类型指针。
+
+标记信息包括哈希值，锁信息，GC信息。类型指针指向这个对象的class。
+
+两个信息分别占用8个字节，所以每个对象的额外内存为16个字节。很消耗内存。  
+
+压缩指针
+
+内存对齐

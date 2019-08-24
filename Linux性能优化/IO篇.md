@@ -1,3 +1,7 @@
+##### 磁盘性能指标
+
+
+
 #### 工具：
 
 **iostat**
@@ -14,7 +18,7 @@ iostat -d -x 1
 
 **strace**
 
-
+![](images/cff31e715af51c9cb8085ce1bb48318d.png)
 
 ![](images/6f26fa18a73458764fcda00212006698.png)
 
