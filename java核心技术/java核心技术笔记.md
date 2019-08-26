@@ -70,3 +70,22 @@ tryAcquire(int acquires)由ReentrantLock 自己实现。
 3. 解析（Resolution）
 
 初始化
+
+**第24讲 | 有哪些方法可以在运行时动态生成一个Java类？**
+
+Java Compiler API
+
+利用 Java 字节码操纵工具和类库来实现，比如在专栏第 6 讲中提到的ASM、Javassist、cglib
+
+类加载过程中，字节码转换成类
+
+```java
+protected final Class<?> defineClass(String name, byte[] b, int off, int len,
+ProtectionDomain protectionDomain)
+protected final Class<?> defineClass(String name, java.nio.ByteBuffer b,
+ProtectionDomain protectionDomain)
+```
+
+Java 动态代理 
+
+实现InvocationHandler,通过 Proxy 类，调用其 newProxyInstance 方法，生成一个实现了相应基础接口的代理类实例
