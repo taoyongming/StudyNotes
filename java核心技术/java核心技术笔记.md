@@ -58,3 +58,15 @@ tryAcquire(int acquires)由ReentrantLock 自己实现。
 
 当前线程会被包装成为一个排他模式的节点（EXCLUSIVE），通过 addWaiter 方法添加到队列
 中。
+
+**第23讲 请介绍类加载过程，什么是双亲委派模型？**
+
+加载
+
+链接
+
+1. 验证（Verification）
+2. 准备（Preparation）
+3. 解析（Resolution）
+
+初始化
