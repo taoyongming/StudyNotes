@@ -89,3 +89,19 @@ ProtectionDomain protectionDomain)
 Java 动态代理 
 
 实现InvocationHandler,通过 Proxy 类，调用其 newProxyInstance 方法，生成一个实现了相应基础接口的代理类实例
+
+**第25讲 | 谈谈JVM内存区域的划分，哪些区域可能发生OutOfMemoryError?**
+
+1 程序计数器（PC，Program Counter Register）。线程独有
+
+2 Java 虚拟机栈（Java Virtual Machine Stack）线程独有
+
+内部保存一个个的栈帧（Stack Frame），对应着一次次的 Java 方法调用。栈帧中存储着局部变量表、操作数（operand）栈、动态链接、方法正常退出或者异常退出的定义等。
+
+3 堆（Heap） 线程共享
+
+4 方法区（Method Area）线程共享
+
+存储所谓的元（Meta）数据，例如类结构信息，以及对应的运行时常量池、字段、方法代码等。运行时常量池（Run-Time Constant Pool），Java 的常量池可以存放各种常量信息，不管是编译期生成的各种字面量，还是需要在运行时决定的符号引用。
+
+5 本地方法栈（Native Method Stack）。线程独有
