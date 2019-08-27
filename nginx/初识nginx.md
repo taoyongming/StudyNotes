@@ -67,3 +67,11 @@ TLS通讯过程
 
 设置HTTPS
 
+**用免费ssl证书实现一个https站点**
+
+安装python2-certbot-nginx工具
+
+certbot --nginx --nginx-server-root=/usr/local/openresty/nginx/conf/ -d geektime.taohui.pub
+
+基于OpenResty用Lua语言实现简单服务
+
