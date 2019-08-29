@@ -1,1 +1,2 @@
-![git](https://github.com/taoyongming/StudyNotes/raw/master/images/GIT.png)
+![git](GIT.png)
+

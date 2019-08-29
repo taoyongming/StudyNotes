@@ -1,4 +1,6 @@
-Java 虚拟机将字节流转化为 Java 类的过程。这个过程可分为加载、链接以及初始化三大步骤。
+#### 03| Java 虚拟机将字节流转化为 Java 类的过程
+
+这个过程可分为加载、链接以及初始化三大步骤。
 
 加载是指查找字节流，并且据此创建类的过程。加载需要借助类加载器，在 Java 虚拟机中，类加载器使用了双亲委派模型，即接收到加载请求时，会先将请求转发给父类加载器。
 
@@ -44,8 +46,6 @@ Java 里所有非私有实例方法调用都会被编译成 invokevirtual 指令
 
 方法内联指的是编译器在编译一个方法时，将某个方法调用的目标方法也纳入编译范围内，并用其返回值替代原方法调用这么个过程。
 
-
-
 ```
 // 获取方法句柄的不同方式
 MethodHandles.Lookup l = Foo.lookup(); // 具备 Foo 类的访问权限
@@ -56,7 +56,7 @@ MethodType t = MethodType.methodType(void.class, Object.class);
 MethodHandle mh1 = l.findStatic(Foo.class, "bar", t);
 ```
 
-#### java对象的内存布局
+#### 10 | java对象的内存布局
 
  对象头
 
@@ -70,7 +70,7 @@ MethodHandle mh1 = l.findStatic(Foo.class, "bar", t);
 
 内存对齐
 
-#### 垃圾回收
+#### 11 |垃圾回收
 
 可达性分析算法
 
@@ -95,5 +95,32 @@ Stop-the-world 以及安全点
 
 Java 虚拟机将堆划分为新生代和老年代。其中，新生代又被划分为 Eden 区，以及两个大小相同的 Survivor 区。
 
-#### 内存模型
+#### 13 | 内存模型
 
+内存可见性规则。
+
+#### 14 | Java虚拟机是怎么实现synchronized的？
+
+monitorenter 和 monitorexit 指令。这两种指令均会消耗操作数栈上的一个引用类型的元素（也就是 synchronized 关键字括号里的引用），作为所要加锁解锁的锁对象。
+
+对象头中的标记字段（mark word）。它的最后两位便被用来表示该对象的锁状态。其中，00 代表轻量级锁，01 代表无锁（或偏向锁），10 代表重量级锁，11 则跟垃圾回收算法的标记有关。
+
+重量级锁
+
+轻量级锁
+
+ java 虚拟机会尝试用CAS（compare-and-swap）操作替换锁对象的标记字段
+
+偏向锁
+
+#### 15 | Java语法糖与Java编译器
+
+Java语法糖有那几种呢？如下所示：
+包装类型和基本类型间的转换，自动装箱和拆箱的设计
+泛型的设计
+变长参数的设计
+try-with-resources，关闭资源的设计
+在同一个catch代码块中捕获多种异常
+finally代码块总是被执行的设计
+foreach循环数组的设计
+foreach循环Iterable对象的设计
