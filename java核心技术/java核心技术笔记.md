@@ -167,3 +167,24 @@ Compiler : JIT开销
 -XX:MaxTenuringThreshold=N
 
 第四，老年代清理。标记整理 Mark-Compact，标记清除 Mark-Sweep ，老年代 GC 叫作 Major GC，将对整个堆进行的清理叫作 Full GC
+
+##### 第28讲 | 谈谈你的GC调优思路?
+
+从性能的角度看，通常关注三个方面，内存占用（footprint）、延时（latency）和吞吐量（throughput）
+
+从内存区域的角度，G1 同样存在着年代的概念，但是与我前面介绍的内存结构很不一样，其内
+部是类似棋盘状的一个个 region 组成。
+
+![](images/Snipaste_2019-08-30_15-43-32.png)
+
+G1 会将超过 region 50% 大小的对象（在应用中，通常是 byte 或 char 数组）归类为 Humongous 对象，并放置在相应的 region 中。
+
+Remembered Set，它通常约占用 Heap 大小的 20% 或更高
+
+打开 GC 日志：
+
+-XX:+PrintGCDetails
+-XX:+PrintGCDateStamps
+
+更多参考G1调优参考：[G1 调优指南](https://docs.oracle.com/javase/9/gctuning/garbage-first-garbage-collector-tuning.htm#JSGCT-GUID-90E30ACA-8040-432E-B3A0-1E0440AB556A)
+
