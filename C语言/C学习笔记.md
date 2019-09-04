@@ -52,3 +52,23 @@ allocp = p;
 字符指针与函数
 
 字符数组以空字符‘\0’结尾。
+
+指向函数的指针
+
+```
+int *f();      /* f: function returning pointer to int */
+
+int (*pf)();     /* pf: pointer to function returning int */
+```
+
+##### 结构与函数
+
+结构指针 ： struct point *pp
+
+结构数组：struct key {
+
+char *word;
+
+int count;
+
+}keytab[NKEYS]

@@ -188,3 +188,6 @@ Remembered Set，它通常约占用 Heap 大小的 20% 或更高
 
 更多参考G1调优参考：[G1 调优指南](https://docs.oracle.com/javase/9/gctuning/garbage-first-garbage-collector-tuning.htm#JSGCT-GUID-90E30ACA-8040-432E-B3A0-1E0440AB556A)
 
+##### 第29讲 | Java内存模型中的happen-before是什么？
+
+Happen-before 关系，是 Java 内存模型中保证多线程操作可见性的机制。
