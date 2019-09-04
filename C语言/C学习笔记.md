@@ -52,3 +52,12 @@ allocp = p;
 字符指针与函数
 
 字符数组以空字符‘\0’结尾。
+
+指向函数的指针
+
+```
+int *f();      /* f: function returning pointer to int */
+
+int (*pf)();     /* pf: pointer to function returning int */
+```
+

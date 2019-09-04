@@ -124,3 +124,7 @@ try-with-resources，关闭资源的设计
 finally代码块总是被执行的设计
 foreach循环数组的设计
 foreach循环Iterable对象的设计
+
+#### 16 | 即时编译
+
+​		从 Java 8 开始，Java 虚拟机默认采用分层编译的方式。它将执行分为五个层次，分为为 0 层解释执行，1 层执行没有 profiling 的 C1 代码，2 层执行部分 profiling 的 C1 代码，3 层执行全部 profiling 的 C1 代码，和 4 层执行 C2 代码。
