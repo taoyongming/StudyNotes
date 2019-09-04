@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c9c4c8a9-f553-4843-9ae4-ecbcc9142d9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/C语言/C学习笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/C语言/C学习笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/深入拆机JAVA虚拟机/深入拆机JAVA虚拟机学习笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/深入拆机JAVA虚拟机/深入拆机JAVA虚拟机学习笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/透视http/基础篇.md" beforeDir="false" afterPath="$PROJECT_DIR$/透视http/基础篇.md" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="StudyNotes.iml" />
+    <ignored path=".idea/inspectionProfiles/Project_Default.xml" />
+    <ignored path=".idea/compiler.xml" />
+    <ignored path=".idea/description.html" />
+    <ignored path=".idea/encodings.xml" />
+    <ignored path=".idea/misc.xml" />
+    <ignored path=".idea/modules.xml" />
+    <ignored path=".idea/vcs.xml" />
+    <ignored path=".idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1578608968">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="5" />
+          <entry key="Markdown" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-505482782">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="50" />
+          <entry key="project.open.time.0" value="20" />
+          <entry key="project.open.time.1" value="11" />
+          <entry key="project.open.time.2" value="14" />
+          <entry key="project.open.time.3" value="6" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="62" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="453" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="1" />
+          <entry key="git.branch.checkout.revision" value="2" />
+          <entry key="git.branch.delete.local" value="1" />
+          <entry key="git.branch.merge" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="3" />
+          <entry key="JAVA" value="74" />
+          <entry key="Markdown" value="61" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/javaConcurrent/FibonacciTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javaConcurrent/MapReduce.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitingore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>localhost:8081/fengyu2/sensor/getMinuteCharIds.do?sensorNumber=009569000000a5b8&amp;dayTime=2019-07-29+10%3A30%3A23</find>
+      <find>getMinuteCharIds</find>
+      <find>ReentrantLock</find>
+      <find>sync</find>
+      <find>tryAcquire</find>
+      <find>userChose</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tym" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ContextTest2.java" />
+        <option value="$PROJECT_DIR$/src/ServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/Server.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/Server.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/Package.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/Worker.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/Test.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/PackageChannel.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/LockConditionTest.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/BlockingQueueTest.java" />
+        <option value="$PROJECT_DIR$/多线程/并发编程-极客时间/java并发编程极客时间.md" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/IDecorator.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/Decorator.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/BaseDecorator.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/CurtainDecorator.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/a.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/c.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/d.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/e.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/f.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/g.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/h.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/j.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/k.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/i.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/b.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/q.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/t.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/BaseCountDecorator.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/CouponDecorator.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/Order.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/PromotionFactory.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/RedPacketDecorator.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/IBaseCount.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/BaseCount.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/OrderDetail.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/decorator/Merchandise.java" />
+        <option value="$PROJECT_DIR$/src/messageQueue/a.java" />
+        <option value="$PROJECT_DIR$/src/FooDump.java" />
+        <option value="$PROJECT_DIR$/src/a.java" />
+        <option value="$PROJECT_DIR$/src/MonomorphicInlineCache.java" />
+        <option value="$PROJECT_DIR$/src/ASMHelper.java" />
+        <option value="$PROJECT_DIR$/src/geekTimeJVM.java" />
+        <option value="$PROJECT_DIR$/src/SafepointTest.java" />
+        <option value="$PROJECT_DIR$/src/geekTimeJVM/SafepointTest.java" />
+        <option value="$PROJECT_DIR$/src/javaperformance/LockConditionTest2.java" />
+        <option value="$PROJECT_DIR$/src/javaConcurrent/Future.java" />
+        <option value="$PROJECT_DIR$/src/javaConcurrent/CompletableFuture.java" />
+        <option value="$PROJECT_DIR$/src/javaConcurrent/CompletableFutureTest.java" />
+        <option value="$PROJECT_DIR$/src/javaConcurrent/FibonacciTest.java" />
+        <option value="$PROJECT_DIR$/src/javaConcurrent/MapReduce.java" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="StudyNotes/invalid/Python" />
+    </ignored-facets>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyInterpreterInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="StudyNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyNotes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="javaConcurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567586090371" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/asm-all-6.0_BETA.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaproject\StudyNotes\java核心技术\images" />
+      <recent name="D:\ideaproject\StudyNotes\透视http\images" />
+      <recent name="D:\ideaproject\StudyNotes\Linux性能优化\images" />
+      <recent name="D:\ideaproject\StudyNotes\tools" />
+      <recent name="D:\ideaproject\StudyNotes\趣谈网络协议" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaproject\StudyNotes\tools" />
+      <recent name="D:\ideaproject\StudyNotes\多线程\并发编程-极客时间" />
+      <recent name="D:\ideaproject\StudyNotes" />
+      <recent name="D:\ideaproject\StudyNotes\src" />
+      <recent name="D:\ideaproject\StudyNotes\多线程" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MapReduce">
+    <configuration name="CompletableFutureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaConcurrent.CompletableFutureTest" />
+      <module name="StudyNotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaConcurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaConcurrent.FibonacciTest" />
+      <module name="StudyNotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaConcurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Future" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaConcurrent.Future" />
+      <module name="StudyNotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaConcurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapReduce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaConcurrent.MapReduce" />
+      <module name="StudyNotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaConcurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SafepointTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="geekTimeJVM.SafepointTest" />
+      <module name="StudyNotes" />
+      <option name="VM_PARAMETERS" value="-XX:+PrintGC -XX:+PrintGCApplicationStoppedTime -XX:+PrintSafepointStatistics -XX:+UseCountedLoopSafepoints" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="geekTimeJVM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SafepointTest" />
+      <item itemvalue="Application.Future" />
+      <item itemvalue="Application.CompletableFutureTest" />
+      <item itemvalue="Application.FibonacciTest" />
+      <item itemvalue="Application.MapReduce" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MapReduce" />
+        <item itemvalue="Application.FibonacciTest" />
+        <item itemvalue="Application.CompletableFutureTest" />
+        <item itemvalue="Application.Future" />
+        <item itemvalue="Application.SafepointTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9c4c8a9-f553-4843-9ae4-ecbcc9142d9e" name="Default Changelist" comment="" />
+      <created>1554107471242</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554107471242</updated>
+      <workItem from="1554107474156" duration="411000" />
+      <workItem from="1554107928433" duration="3234000" />
+      <workItem from="1554164517053" duration="7626000" />
+      <workItem from="1554270320389" duration="168000" />
+      <workItem from="1554770477993" duration="3204000" />
+      <workItem from="1554855669581" duration="1286000" />
+      <workItem from="1554863067120" duration="4814000" />
+      <workItem from="1554943523895" duration="600000" />
+      <workItem from="1554962605039" duration="2459000" />
+      <workItem from="1555027464898" duration="3034000" />
+      <workItem from="1555050410198" duration="2990000" />
+      <workItem from="1555286702208" duration="2701000" />
+      <workItem from="1555307012246" duration="3428000" />
+      <workItem from="1555642576578" duration="1975000" />
+      <workItem from="1555919664356" duration="608000" />
+      <workItem from="1555984445889" duration="5238000" />
+      <workItem from="1556175863131" duration="701000" />
+      <workItem from="1556177895255" duration="1208000" />
+      <workItem from="1556521628927" duration="1435000" />
+      <workItem from="1557101613490" duration="4944000" />
+      <workItem from="1557383050087" duration="4043000" />
+      <workItem from="1557706262898" duration="2663000" />
+      <workItem from="1557815334922" duration="4138000" />
+      <workItem from="1557996038827" duration="1957000" />
+      <workItem from="1558417196476" duration="1291000" />
+      <workItem from="1558515062555" duration="89000" />
+      <workItem from="1558573120083" duration="137000" />
+      <workItem from="1559004636990" duration="2602000" />
+      <workItem from="1559111727514" duration="52000" />
+      <workItem from="1560384610306" duration="4168000" />
+      <workItem from="1560474784172" duration="2709000" />
+      <workItem from="1560836148062" duration="3382000" />
+      <workItem from="1560912801190" duration="2360000" />
+      <workItem from="1561333132048" duration="3892000" />
+      <workItem from="1561342610980" duration="2039000" />
+      <workItem from="1561447226720" duration="9773000" />
+      <workItem from="1561702663815" duration="2046000" />
+      <workItem from="1562028744802" duration="983000" />
+      <workItem from="1562138739615" duration="16000" />
+      <workItem from="1563415222721" duration="910000" />
+      <workItem from="1564444693385" duration="5708000" />
+      <workItem from="1564455113087" duration="1518000" />
+      <workItem from="1564468474068" duration="2064000" />
+      <workItem from="1564537304864" duration="2836000" />
+      <workItem from="1564729582900" duration="1716000" />
+      <workItem from="1564963155960" duration="3847000" />
+      <workItem from="1565155074169" duration="6035000" />
+      <workItem from="1565578235092" duration="8834000" />
+      <workItem from="1565847287802" duration="5062000" />
+      <workItem from="1565944136451" duration="635000" />
+      <workItem from="1566442317141" duration="1939000" />
+      <workItem from="1566444504285" duration="8867000" />
+      <workItem from="1566625395095" duration="179000" />
+      <workItem from="1566778946607" duration="2093000" />
+      <workItem from="1566807409905" duration="216000" />
+      <workItem from="1566808331793" duration="1284000" />
+      <workItem from="1566873436194" duration="4948000" />
+      <workItem from="1566890583767" duration="614000" />
+      <workItem from="1566951862504" duration="4039000" />
+      <workItem from="1567042521318" duration="5553000" />
+      <workItem from="1567151032531" duration="1300000" />
+      <workItem from="1567470707931" duration="9100000" />
+      <workItem from="1567575964410" duration="3554000" />
+    </task>
+    <task id="LOCAL-00012" summary="提交代码">
+      <created>1555054779696</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555054779696</updated>
+    </task>
+    <task id="LOCAL-00013" summary="提交代码">
+      <created>1555059556017</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555059556017</updated>
+    </task>
+    <task id="LOCAL-00014" summary="提交代码">
+      <created>1555295070066</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1555295070066</updated>
+    </task>
+    <task id="LOCAL-00015" summary="提交代码">
+      <created>1555642652416</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1555642652416</updated>
+    </task>
+    <task id="LOCAL-00016" summary="提交代码">
+      <created>1555662641796</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1555662641796</updated>
+    </task>
+    <task id="LOCAL-00017" summary="提交代码">
+      <created>1555919671036</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1555919671036</updated>
+    </task>
+    <task id="LOCAL-00018" summary="提交代码">
+      <created>1555985327105</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1555985327105</updated>
+    </task>
+    <task id="LOCAL-00019" summary="提交代码">
+      <created>1556005303388</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1556005303388</updated>
+    </task>
+    <task id="LOCAL-00020" summary="提交代码">
+      <created>1556085181554</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1556085181554</updated>
+    </task>
+    <task id="LOCAL-00021" summary="提交代码">
+      <created>1556085312233</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1556085312233</updated>
+    </task>
+    <task id="LOCAL-00022" summary="提交代码">
+      <created>1556175957278</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1556175957278</updated>
+    </task>
+    <task id="LOCAL-00023" summary="提交代码">
+      <created>1556523211770</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1556523211770</updated>
+    </task>
+    <task id="LOCAL-00024" summary="提交代码">
+      <created>1556523293183</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1556523293183</updated>
+    </task>
+    <task id="LOCAL-00025" summary="提交代码">
+      <created>1557208603444</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1557208603444</updated>
+    </task>
+    <task id="LOCAL-00026" summary="提交代码">
+      <created>1557447443568</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1557447443568</updated>
+    </task>
+    <task id="LOCAL-00027" summary="提交代码">
+      <created>1557817552624</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1557817552624</updated>
+    </task>
+    <task id="LOCAL-00028" summary="提交代码">
+      <created>1557817582581</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1557817582581</updated>
+    </task>
+    <task id="LOCAL-00029" summary="提交代码">
+      <created>1557896820145</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1557896820145</updated>
+    </task>
+    <task id="LOCAL-00030" summary="提交代码">
+      <created>1557896864892</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1557896864892</updated>
+    </task>
+    <task id="LOCAL-00031" summary="提交代码">
+      <created>1557908629039</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1557908629039</updated>
+    </task>
+    <task id="LOCAL-00032" summary="提交代码">
+      <created>1557908782062</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1557908782062</updated>
+    </task>
+    <task id="LOCAL-00033" summary="提交代码">
+      <created>1557996066395</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1557996066395</updated>
+    </task>
+    <task id="LOCAL-00034" summary="提交代码">
+      <created>1558418875917</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1558418875917</updated>
+    </task>
+    <task id="LOCAL-00035" summary="提交代码">
+      <created>1559020760655</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1559020760655</updated>
+    </task>
+    <task id="LOCAL-00036" summary="提交代码">
+      <created>1559111759730</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1559111759730</updated>
+    </task>
+    <task id="LOCAL-00037" summary="提交代码">
+      <created>1560502907643</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1560502907643</updated>
+    </task>
+    <task id="LOCAL-00038" summary="提交代码">
+      <created>1563415247229</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1563415247229</updated>
+    </task>
+    <task id="LOCAL-00039" summary="提交代码">
+      <created>1564455143823</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1564455143824</updated>
+    </task>
+    <task id="LOCAL-00040" summary="提交代码">
+      <created>1564474124368</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1564474124368</updated>
+    </task>
+    <task id="LOCAL-00041" summary="提交代码">
+      <created>1564474169760</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1564474169760</updated>
+    </task>
+    <task id="LOCAL-00042" summary="提交代码">
+      <created>1564540915665</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1564540915665</updated>
+    </task>
+    <task id="LOCAL-00043" summary="提交代码">
+      <created>1565155384023</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1565155384023</updated>
+    </task>
+    <task id="LOCAL-00044" summary="提交代码">
+      <created>1565166776822</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1565166776822</updated>
+    </task>
+    <task id="LOCAL-00045" summary="提交代码">
+      <created>1565578267241</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1565578267241</updated>
+    </task>
+    <task id="LOCAL-00046" summary="提交代码">
+      <created>1565681370228</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1565681370228</updated>
+    </task>
+    <task id="LOCAL-00047" summary="提交代码">
+      <created>1565850781298</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1565850781299</updated>
+    </task>
+    <task id="LOCAL-00048" summary="提交代码">
+      <created>1565856425148</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1565856425149</updated>
+    </task>
+    <task id="LOCAL-00049" summary="提交代码">
+      <created>1565944152631</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1565944152631</updated>
+    </task>
+    <task id="LOCAL-00050" summary="提交代码">
+      <created>1566454856792</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1566454856794</updated>
+    </task>
+    <task id="LOCAL-00051" summary="提交代码">
+      <created>1566462777646</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1566462777646</updated>
+    </task>
+    <task id="LOCAL-00052" summary="提交代码">
+      <created>1566625462387</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1566625462387</updated>
+    </task>
+    <task id="LOCAL-00053" summary="提交代码">
+      <created>1566779031179</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1566779031179</updated>
+    </task>
+    <task id="LOCAL-00054" summary="提交代码">
+      <created>1566807478087</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1566807478087</updated>
+    </task>
+    <task id="LOCAL-00055" summary="提交代码">
+      <created>1566890597012</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1566890597012</updated>
+    </task>
+    <task id="LOCAL-00056" summary="提交代码">
+      <created>1567067741577</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1567067741578</updated>
+    </task>
+    <task id="LOCAL-00057" summary="提交代码">
+      <created>1567151794483</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1567151794483</updated>
+    </task>
+    <task id="LOCAL-00058" summary="提交代码">
+      <created>1567577432007</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1567577432007</updated>
+    </task>
+    <task id="LOCAL-00059" summary="提交代码">
+      <created>1567577507811</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1567577507811</updated>
+    </task>
+    <task id="LOCAL-00060" summary="提交代码">
+      <created>1567577632821</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1567577632821</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="183255000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48494983" visible="true" weight="0.1663113" />
+      <window_info id="Structure" order="1" sideWeight="0.5150502" side_tool="true" weight="0.1369936" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="JRebel" order="8" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.18506132" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.18952063" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.2664437" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.19631237" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.329718" />
+      <window_info anchor="bottom" x="570" y="82" width="1132" height="635" id="Terminal" order="9" sideWeight="0.82462686" visible="true" weight="0.3690078" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" weight="0.6354515" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32887402" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49840087" weight="0.42809364" />
+      <window_info active="true" anchor="bottom" id="REST Client" order="15" weight="0.3308026" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.2624729" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="17" weight="0.329718" />
+      <window_info anchor="bottom" id="Problems" order="18" sideWeight="0.4989339" weight="0.329718" />
+      <window_info anchor="bottom" id="JRebel Executor" order="19" sideWeight="0.80810237" weight="0.22885032" />
+      <window_info anchor="bottom" id="JRebel Console" order="20" sideWeight="0.50373137" side_tool="true" weight="0.12820514" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="21" sideWeight="0.49946696" weight="0.32998884" />
+      <window_info anchor="bottom" id="Docker" order="22" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tool Output" order="23" show_stripe_button="false" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="24" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.116204694" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="9" weight="0.32995737" />
+      <window_info anchor="right" id="SciView" order="10" />
+      <window_info anchor="right" id="Alibaba Log Console" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48494983" visible="true" weight="0.1369936" />
+      <window_info id="Structure" order="1" sideWeight="0.5150502" side_tool="true" visible="true" weight="0.1369936" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="JRebel" order="8" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.18506132" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" visible="true" weight="0.13154961" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.2664437" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.19631237" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.82462686" weight="0.23968785" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" weight="0.6354515" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32887402" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49840087" weight="0.42809364" />
+      <window_info active="true" anchor="bottom" id="REST Client" order="15" weight="0.3308026" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.2624729" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="17" weight="0.329718" />
+      <window_info anchor="bottom" id="Problems" order="18" sideWeight="0.4989339" weight="0.329718" />
+      <window_info anchor="bottom" id="JRebel Executor" order="19" sideWeight="0.80810237" weight="0.22885032" />
+      <window_info anchor="bottom" id="JRebel Console" order="20" sideWeight="0.50373137" side_tool="true" weight="0.12820514" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="21" sideWeight="0.49946696" weight="0.32998884" />
+      <window_info anchor="bottom" id="Docker" order="22" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tool Output" order="23" show_stripe_button="false" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="24" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.116204694" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="9" weight="0.32995737" />
+      <window_info anchor="right" id="SciView" order="10" />
+      <window_info anchor="right" id="Alibaba Log Console" order="11" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/Lesson6_1.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/Lesson6_1.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/Lesson10_1.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/PackageChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/BlockingQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="9" column="67" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux性能优化/学习笔记.md" />
+    <entry file="file://$PROJECT_DIR$/多线程/多线程.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/多线程/并发编程-极客时间/java并发编程极客时间.md" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/BaseDecorator.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/Decorator.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/IDecorator.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/CurtainDecorator.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/UserCoupon.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/UserRedPacket.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/BaseCountDecorator.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/Order.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/IBaseCount.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/BaseCount.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/OrderDetail.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/CouponDecorator.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/PromotionFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/RedPacketDecorator.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/Merchandise.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/decorator/SupportPromotions.java" />
+    <entry file="file://$PROJECT_DIR$/NIO/NIO.md" />
+    <entry file="file://$PROJECT_DIR$/Linux性能优化/cpu篇.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java性能调优/调优工具.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="606">
+            <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux性能优化/内存篇.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="140">
+            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messageQueue/a.java" />
+    <entry file="file://$PROJECT_DIR$/src/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux性能优化/IO篇.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux性能优化/网络篇.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="320">
+            <caret line="16" selection-start-line="16" selection-end-line="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FooDump.java" />
+    <entry file="file://$PROJECT_DIR$/src/Mutex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/python.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geekTimeJVM/SafepointTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="862" column="51" selection-start-line="862" selection-start-column="51" selection-end-line="862" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="211" column="55" selection-start-line="211" selection-start-column="47" selection-end-line="211" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/Callable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaConcurrent/Future.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MonomorphicInlineCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Foo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaperformance/LockConditionTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/CompletableFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="2021" column="38" selection-start-line="2021" selection-start-column="38" selection-end-line="2021" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaConcurrent/CompletableFutureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1101">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IO/NIO.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java核心技术/java核心技术笔记.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaConcurrent/MapReduce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitingore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaConcurrent/FibonacciTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.7 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>StudyNotes</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>asm-all-6.0_BETA</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

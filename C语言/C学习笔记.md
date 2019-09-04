@@ -61,3 +61,14 @@ int *f();      /* f: function returning pointer to int */
 int (*pf)();     /* pf: pointer to function returning int */
 ```
 
+##### 结构与函数
+
+结构指针 ： struct point *pp
+
+结构数组：struct key {
+
+char *word;
+
+int count;
+
+}keytab[NKEYS]

@@ -12,7 +12,7 @@ import java.util.concurrent.RecursiveTask;
 public class FibonacciTest {
    public static void main(String[] args){
         // 创建分治任务线程池
-        ForkJoinPool fjp =
+        ForkJoinPool fjpgit =
                 new ForkJoinPool(4);
         // 创建分治任务
         Fibonacci fib =
