@@ -140,3 +140,23 @@ foreach循环Iterable对象的设计
 Java 字节码是 Java 虚拟机所使用的指令集。
 
 #### 20 | 方法内联
+
+#### 22 | HotSpot虚拟机的intrinsic
+
+HotSpot 虚拟机将对标注了`@HotSpotIntrinsicCandidate`注解的方法的调用，替换为直接使用基于特定 CPU 指令的高效实现。这些方法我们便称之为 intrinsic。
+
+用到Intrinsic的地方：
+
+java.util.concurrent，
+
+`StringBuilder`和`StringBuffer`类
+
+`String`类、`StringLatin1`类、`StringUTF16`类和`Arrays`类的方法
+
+#### 23 | 逃逸分析
+
+逃逸分析是“一种确定指针动态范围的静态分析，它可以分析在程序的哪些地方可以访问到指针”
+
+编译器判断对象逃逸的依据有两个：一是看对象是否被存入堆中，二是看对象是否作为方法调用的调用者或者参数。
+
+即时编译器可以根据逃逸分析的结果进行诸如锁消除、栈上分配以及标量替换的优化。

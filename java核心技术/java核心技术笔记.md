@@ -191,3 +191,15 @@ Remembered Set，它通常约占用 Heap 大小的 20% 或更高
 ##### 第29讲 | Java内存模型中的happen-before是什么？
 
 Happen-before 关系，是 Java 内存模型中保证多线程操作可见性的机制。
+
+##### 第36讲 | 谈谈MySQL支持的事务隔离级别，以及悲观锁和乐观锁的原理和应用场景？
+
+读未提交（Read uncommitted）   允许出现脏读
+读已提交（Read committed）允许不可重复读和幻象读（Phantom Read）出现。
+可重复读（Repeatable reads），MySQL 在可重复读级别不会出现幻象读。
+串行化（Serializable）
+
+悲观锁： 一般就是利用类似 SELECT … FOR UPDATE 这样的语句，对数据加锁，避免其他事务意外修改数据。
+
+乐观锁：与 Java 并发包中的AtomicFieldUpdater 类似，也是利用 CAS 机制，并不会对数据加锁，而是通过对比数据的时间戳或者版本号，来实现乐观锁需要的版本判断。
+
