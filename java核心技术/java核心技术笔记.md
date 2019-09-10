@@ -235,3 +235,8 @@ Spring Bean 生命周期比较复杂，可以分为创建和销毁两个过程�
 - Session，很显然 Bean 实例的作用域是 Session 范围。
 
 - GlobalSession，用于 Portlet 容器，因为每个 Portlet 有单独的 Session，GlobalSession提供一个全局性的 HTTP Session。
+
+##### 第38讲 | 对比Java标准NIO类库，你知道Netty是如何实现更高性能的吗？
+
+##### 第39讲 | 谈谈常用的分布式ID的设计方案？Snowflake是否受冬令时切换影响？
+
