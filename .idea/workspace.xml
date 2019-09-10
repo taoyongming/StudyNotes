@@ -1,11 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="e3d07c6a-234b-455f-8f44-94759ad399bd" name="ingnore" comment="" />
-    <list id="a7642fdf-2237-4fea-8f73-cebca5b59e21" name="ignore" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c9c4c8a9-f553-4843-9ae4-ecbcc9142d9e" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyNotes.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/DemoApplication$MultiThreadTester$MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/DemoApplication$MultiThreadTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/DemoApplication$SerialTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/DemoApplication$ThreadContextSwitchTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/DemoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/Foo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/KahanSummation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/MonomorphicInlineCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/Mutex$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/Mutex$Sync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/Mutex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/geekTimeJVM/SafepointTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaConcurrent/CompletableFutureTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaConcurrent/FibonacciTest$Fibonacci.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaConcurrent/FibonacciTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaConcurrent/Future.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaConcurrent/MapReduce$MR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaConcurrent/MapReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaConcurrent/T1Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaConcurrent/T2Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/BlockingQueueTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/BlockingQueueTest$Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/BlockingQueueTest$Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/BlockingQueueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest$Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest$ExecutionTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest$QueryIdAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest$QueryNameAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest2$ActionContext$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest2$ActionContext$ContextHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest2$ActionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest2$Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest2$ExecutionTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest2$QueryIdAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest2$QueryNameAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ContextTest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/LockConditionTest2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/LockConditionTest2$Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/LockConditionTest2$Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/LockConditionTest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/Package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/PackageChannel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/Server$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/ServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/javaperformance/Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/math/Combination.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/math/Lesson10_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/math/Lesson6_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/math/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyNotes/math/TreeNode.class" beforeDir="false" />
     </list>
-    <list default="true" id="c9c4c8a9-f553-4843-9ae4-ecbcc9142d9e" name="Default Changelist" comment="Default Changelist" />
+    <list id="e3d07c6a-234b-455f-8f44-94759ad399bd" name="ingnore" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="StudyNotes.iml" />
     <ignored path=".idea/inspectionProfiles/Project_Default.xml" />
@@ -88,7 +149,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,9 +289,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,7 +302,7 @@
             <path>
               <item name="StudyNotes" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="Linux实战技能100讲" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -364,7 +425,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c9c4c8a9-f553-4843-9ae4-ecbcc9142d9e" name="Default Changelist" comment="" />
-      <changelist id="a7642fdf-2237-4fea-8f73-cebca5b59e21" name="ignore" comment="" />
+      <changelist id="" name="ignore" comment="" />
       <changelist id="e3d07c6a-234b-455f-8f44-94759ad399bd" name="ingnore" comment="" />
       <created>1554107471242</created>
       <option name="number" value="Default" />
@@ -436,13 +497,7 @@
       <workItem from="1567599743992" duration="138000" />
       <workItem from="1567861917495" duration="658000" />
       <workItem from="1567913883178" duration="903000" />
-    </task>
-    <task id="LOCAL-00015" summary="提交代码">
-      <created>1555642652416</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1555642652416</updated>
+      <workItem from="1568121246915" duration="595000" />
     </task>
     <task id="LOCAL-00016" summary="提交代码">
       <created>1555662641796</created>
@@ -780,11 +835,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567913941493</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Default Changelist">
+      <created>1568121259246</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1568121259247</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184954000" />
+    <option name="totallyTimeSpent" value="185549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
@@ -797,12 +859,12 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" weight="0.6354515" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.116204694" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49840087" weight="0.5854617" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49840087" weight="0.54518664" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.18952063" />
       <window_info active="true" anchor="bottom" x="570" y="82" width="1132" height="635" id="Terminal" order="9" sideWeight="0.82462686" visible="true" weight="0.36836934" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48494983" visible="true" weight="0.17196262" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48494983" visible="true" weight="0.17383178" />
       <window_info anchor="bottom" id="Docker" order="22" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" sideWeight="0.5150502" side_tool="true" weight="0.1369936" />
@@ -853,6 +915,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="UI Designer" order="4" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.82462686" weight="0.23968785" />
       <window_info anchor="bottom" id="Docker" order="22" show_stripe_button="false" />
@@ -861,23 +924,22 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Tool Output" order="23" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" weight="0.6354515" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.19631237" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32887402" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48494983" visible="true" weight="0.1369936" />
       <window_info anchor="bottom" id="Problems" order="18" sideWeight="0.4989339" weight="0.329718" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49840087" weight="0.42809364" />
-      <window_info id="Alibaba Cloud Explorer" order="9" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.116204694" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="21" sideWeight="0.49946696" weight="0.32998884" />
       <window_info anchor="bottom" id="ANTLR Preview" order="24" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="19" sideWeight="0.80810237" weight="0.22885032" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48494983" visible="true" weight="0.1369936" />
+      <window_info id="Alibaba Cloud Explorer" order="9" />
       <window_info anchor="bottom" id="JRebel Console" order="20" sideWeight="0.50373137" side_tool="true" weight="0.12820514" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32887402" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.19631237" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="JRebel Setup Guide" order="9" weight="0.32995737" />
@@ -965,13 +1027,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/javaperformance/BlockingQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Linux性能优化/学习笔记.md" />
     <entry file="file://$PROJECT_DIR$/多线程/多线程.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -1150,15 +1205,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Linux实战技能100讲/学习笔记.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="258">
-            <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Linux实战技能100讲/学习笔记.md" />
+    <entry file="file://$PROJECT_DIR$/StudyNotes.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
