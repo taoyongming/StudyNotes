@@ -173,3 +173,27 @@ java.util.concurrent，
 注解处理器主要有三个用途。一是定义编译规则，并检查被编译的源文件。二是修改已有源代码。三是生成新的源代码。其中，第二种涉及了 Java 编译器的内部 API，因此并不推荐。第三种较为常见，是 OpenJDK 工具 jcstress，以及 JMH 生成测试代码的方式。
 
 Java 源代码的编译过程可分为三个步骤，分别为解析源文件生成抽象语法树，调用已注册的注解处理器，和生成字节码。如果在第 2 步中，注解处理器生成了新的源代码，那么 Java 编译器将重复第 1、2 步，直至不再生成新的源代码。
+
+#### 30 | Java虚拟机的监控及诊断工具（命令行篇）
+
+jps： 打印所有正在运行的 Java 进程的相关信息
+
+jstat：打印目标 Java 进程的性能数据
+
+jmap：分析 Java 虚拟机堆中的对象。
+
+jinfo：可用来查看目标 Java 进程的参数
+
+jstack：可以用来打印目标 Java 进程中各个线程的栈轨迹，以及这些线程所持有的锁。
+
+#### 31 | Java虚拟机的监控及诊断工具（GUI篇）
+
+**eclipse MAT**
+
+eclipse MAT 可用于分析由`jmap`命令导出的 Java 堆快照。它包括两个相对比较重要的视图，分别为直方图和支配树。直方图展示了各个类的实例数目以及这些实例的 Shallow heap 或 Retained heap 的总和。支配树则展示了快照中每个对象所直接支配的对象。
+
+**Java Mission Control**
+
+Java Mission Control 是 Java 虚拟机平台上的性能监控工具。Java Flight Recorder 是 JMC 的其中一个组件，能够以极低的性能开销收集 Java 虚拟机的性能数据。
+
+JFR 的启用方式有三种，分别为在命令行中使用`-XX:StartFlightRecording=`参数，使用`jcmd`的`JFR.*`子命令，以及 JMC 的 JFR 插件。JMC 能够加载 JFR 的输出结果，并且生成各种信息丰富的图表。
