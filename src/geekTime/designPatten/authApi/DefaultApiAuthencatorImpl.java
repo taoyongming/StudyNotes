@@ -12,7 +12,7 @@ public class DefaultApiAuthencatorImpl implements ApiAuthencator {
         private CredentialStorage credentialStorage;
 
         public DefaultApiAuthencatorImpl() {
-            this.credentialStorage = new MysqlCredentialStorage();
+            this.credentialStorage = new MemoryCredentialStorage();
         }
 
         public DefaultApiAuthencatorImpl(CredentialStorage credentialStorage) {
