@@ -1,4 +1,4 @@
-package geekTimeJVM;
+package geekTime.JVM;
 
 import java.lang.annotation.*;
 

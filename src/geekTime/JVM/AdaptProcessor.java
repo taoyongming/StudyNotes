@@ -1,4 +1,4 @@
-package geekTimeJVM;
+package geekTime.JVM;
 
 import java.io.*;
 import java.util.Set;
@@ -12,14 +12,14 @@ import javax.tools.JavaFileObject;
 
 import javax.tools.Diagnostic.Kind;
 
-@SupportedAnnotationTypes("geekTimeJVM.Adapt")
+@SupportedAnnotationTypes("geekTime.JVM.Adapt")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class AdaptProcessor extends AbstractProcessor {
 
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
         for (TypeElement annotation : annotations) {
-            if (!"geekTimeJVM.Adapt".equals(annotation.getQualifiedName().toString())) {
+            if (!"geekTime.JVM.Adapt".equals(annotation.getQualifiedName().toString())) {
                 continue;
             }
 

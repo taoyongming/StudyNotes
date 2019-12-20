@@ -1,4 +1,4 @@
-package geekTimeJVM;
+package geekTime.JVM;
 
 import java.util.Set;
 import javax.annotation.processing.*;
@@ -7,7 +7,7 @@ import javax.lang.model.element.*;
 import javax.lang.model.util.ElementFilter;
 import javax.tools.Diagnostic.Kind;
 
-@SupportedAnnotationTypes("geekTimeJVM.CheckGetter")
+@SupportedAnnotationTypes("geekTime.JVM.CheckGetter")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class CheckGetterProcessor extends AbstractProcessor {
 
