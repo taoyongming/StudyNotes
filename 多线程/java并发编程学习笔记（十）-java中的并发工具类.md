@@ -1,6 +1,4 @@
-	在JDK的并发包里提供了几个非常有用的并发工具类。CountDownLatch、CyclicBarrier和
-Semaphore工具类提供了一种并发流程控制的手段，Exchanger工具类则提供了在线程间交换数
-据的一种手段。本章会配合一些应用场景来介绍如何使用这些工具类。
+​		在JDK的并发包里提供了几个非常有用的并发工具类。CountDownLatch、CyclicBarrier和Semaphore工具类提供了一种并发流程控制的手段，Exchanger工具类则提供了在线程间交换数据的一种手段。本章会配合一些应用场景来介绍如何使用这些工具类。
 
 ##### 等待多线程完成的CountDownLatch
 

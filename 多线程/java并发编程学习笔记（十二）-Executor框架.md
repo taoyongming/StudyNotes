@@ -212,8 +212,8 @@ SynchronousQueue.poll（keepAliveTime，TimeUnit.NANOSECONDS）。这个poll操�
 程最多在SynchronousQueue中等待60秒钟。如果60秒钟内主线程提交了一个新任务（主线程执
 行步骤1）），那么这个空闲线程将执行主线程提交的新任务；否则，这个空闲线程将终止。由于
 空闲60秒的空闲线程会被终止，因此长时间保持空闲的CachedThreadPool不会使用任何资源。
-前面提到过，SynchronousQueue是一个没有容量的阻塞队列。每个插入操作必须等待另一
-个线程的对应移除操作，反之亦然。CachedThreadPool使用SynchronousQueue，把主线程提交的
+前面提到过，**SynchronousQueue是一个没有容量的阻塞队列。每个插入操作必须等待另一**
+**个线程的对应移除操作，反之亦然**。CachedThreadPool使用SynchronousQueue，把主线程提交的
 任务传递给空闲线程执行。
 
 ##### ScheduledThreadPoolExecutor详解

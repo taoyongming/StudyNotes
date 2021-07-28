@@ -314,3 +314,16 @@ END
 DELIMITER ;
 ```
 
+
+
+查看mysql当前打开文件数
+
+```sql
+show global status like 'open%';
+```
+
+查看mysql配置的最大打开文件数
+
+```sql
+show global variables like '%open%';
+```
